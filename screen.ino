@@ -100,7 +100,7 @@ void displayFileInfo(const char* filename, int width, int height) {
   lcd.print(F("px"));
 
   /* Display the "CUT" warning if image size don't fit */
-  if(height > LED_STRIP_SIZE)
+  if(width > LED_STRIP_SIZE)
     lcd.print(F(" CUT"));
 }
 
